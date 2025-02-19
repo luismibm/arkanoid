@@ -1,14 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://be1kywhky20xk"]
+[gd_scene load_steps=2 format=3 uid="uid://4rq0vp6w10ug"]
 
-[ext_resource type="Texture2D" uid="uid://bhbedyhng2dva" path="res://sprites/block_green.png" id="1_xi873"]
+[ext_resource type="Texture2D" uid="uid://bhbedyhng2dva" path="res://sprites/block_green.png" id="1_mnyok"]
 
-[node name="block-green" type="StaticBody2D"]
+[node name="blockGreen" type="StaticBody2D" groups=["blocks"]]
+position = Vector2(23, 48)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(19, 40)
-texture = ExtResource("1_xi873")
+texture = ExtResource("1_mnyok")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(19, 40)
 polygon = PackedVector2Array(-8, 4, -8, -4, 8, -4, 8, 4)

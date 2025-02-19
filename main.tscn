@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://lqix5xaa64rp"]
+[gd_scene load_steps=13 format=3 uid="uid://lqix5xaa64rp"]
 
 [ext_resource type="Texture2D" uid="uid://dle8su5pr4l51" path="res://sprites/hexagon_pattern.png" id="1_ex4sg"]
 [ext_resource type="Texture2D" uid="uid://y70rew4ohxuq" path="res://sprites/border_right.png" id="2_uuq0s"]
@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cbukp4g23lse3" path="res://sprites/racket.png" id="5_y8x1y"]
 [ext_resource type="Script" path="res://ball.gd" id="7_lqgfc"]
 [ext_resource type="Texture2D" uid="uid://b7l8oj0ift744" path="res://sprites/ball.png" id="8_vsfl5"]
+[ext_resource type="PackedScene" uid="uid://caq1cq520psc8" path="res://block_red.tscn" id="10_hdl5w"]
+[ext_resource type="PackedScene" uid="uid://qugnfhwa4m7o" path="res://block_blue.tscn" id="11_4toj4"]
+[ext_resource type="PackedScene" uid="uid://b57xj8vq4xvex" path="res://block_yellow.tscn" id="11_yd4ml"]
+[ext_resource type="PackedScene" uid="uid://4rq0vp6w10ug" path="res://block_green.tscn" id="12_rg6si"]
 
 [node name="Main" type="Node2D"]
 
@@ -75,3 +79,137 @@ texture = ExtResource("8_vsfl5")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ball"]
 position = Vector2(114.8, 220)
 polygon = PackedVector2Array(-3, 2.5, -3, -2.5, 3, -2.5, 3, 2.5)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="blockBlue" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(25, 21)
+
+[node name="blockRed" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(25, 30)
+
+[node name="blockYellow" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(25, 39)
+
+[node name="blockGreen" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(25, 48)
+
+[node name="blockBlue2" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(42, 21)
+
+[node name="blockRed2" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(42, 30)
+
+[node name="blockYellow2" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(42, 39)
+
+[node name="blockGreen2" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(42, 48)
+
+[node name="blockBlue3" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(59, 21)
+
+[node name="blockRed3" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(59, 30)
+
+[node name="blockYellow3" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(59, 39)
+
+[node name="blockGreen3" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(59, 48)
+
+[node name="blockBlue4" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(76, 21)
+
+[node name="blockRed4" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(76, 30)
+
+[node name="blockYellow4" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(76, 39)
+
+[node name="blockGreen4" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(76, 48)
+
+[node name="blockBlue5" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(93, 21)
+
+[node name="blockRed5" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(93, 30)
+
+[node name="blockYellow5" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(93, 39)
+
+[node name="blockGreen5" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(93, 48)
+
+[node name="blockBlue6" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(110, 21)
+
+[node name="blockRed6" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(110, 30)
+
+[node name="blockYellow6" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(110, 39)
+
+[node name="blockGreen6" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(110, 48)
+
+[node name="blockBlue7" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(127, 21)
+
+[node name="blockRed7" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(127, 30)
+
+[node name="blockYellow7" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(127, 39)
+
+[node name="blockGreen7" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(127, 48)
+
+[node name="blockBlue8" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(144, 21)
+
+[node name="blockRed8" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(144, 30)
+
+[node name="blockYellow8" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(144, 39)
+
+[node name="blockGreen8" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(144, 48)
+
+[node name="blockBlue9" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(161, 21)
+
+[node name="blockRed9" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(161, 30)
+
+[node name="blockYellow9" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(161, 39)
+
+[node name="blockGreen9" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(161, 48)
+
+[node name="blockBlue10" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(178, 21)
+
+[node name="blockRed10" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(178, 30)
+
+[node name="blockYellow10" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(178, 39)
+
+[node name="blockGreen10" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(178, 48)
+
+[node name="blockBlue11" parent="Blocks" instance=ExtResource("11_4toj4")]
+position = Vector2(195, 21)
+
+[node name="blockRed11" parent="Blocks" instance=ExtResource("10_hdl5w")]
+position = Vector2(195, 30)
+
+[node name="blockYellow11" parent="Blocks" instance=ExtResource("11_yd4ml")]
+position = Vector2(195, 39)
+
+[node name="blockGreen11" parent="Blocks" instance=ExtResource("12_rg6si")]
+position = Vector2(195, 48)
